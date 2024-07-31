@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body
+{
+    background-color:  hsl(0, 0%, 98%);
+}
+/*This is the Part of navabr */
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+.logo
+{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin: 30px;
+}
+.logo .list li a
+{
+   text-decoration: none;
+   gap: 40px;
+   margin: 10px;
+   color: hsl(0, 0%, 41%);
+   font-weight: 440;
+}
+.btn
+{
+    margin: 30px;
+}
+
+.btn_change
+{
+    margin-right: 10px;
+    margin: 10px;
+}
+.btn button
+{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    border-radius: 13px;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+}
+.btn_change button
+{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    border-radius: 13px;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+}
+.btn button:hover{
+    border: 2px solid black;
+}
+.btn_change button:hover{
+    border: 2px solid black;
+}
+.logo .list li a:hover
+{
+    color: black;
+}
+.img img
+{
+    width:500px;
+}
+.list ul
+{
+    list-style: none;
+}
+.list .flex li
+{
+    display: inline-block;
+    margin: 10px;
+    border-radius: 13px;
+    font-size: 16px;
+    color:black;
+}
+
+.list .flex2 li
+{
+    display: inline;
+    margin: 10px;
+    border-radius: 13px;
+    font-size: 16px;
+    color:black;
+}
+
+.drop_down 
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 20px;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 4px 4px 4px 4px lightgray;
+    display: none;
+    margin-right: 50px;
+    /* height: 150px; */
+    
+}
+.box
+{
+   position: absolute;
+}
+.logo .drop_down li
+{
+    display: block;
+    right: 60px;
+}
+.logo .drop_down li 
+{
+    display: inline-flex;
+    gap: 20px;
+}
+.logo .drop_down li  img
+{
+    display: inline;
+}
+.logo .flex li:hover .drop_down
+{
+    display: block;
+}
+
+/* Second drop down menu 1 */
+
+.drop_down2 
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 10px;
+    border-radius: 15px;
+    padding: 14px 20px 14px 20px;
+    box-shadow: 4px 4px 4px 4px lightgray;
+    display: none;
+
+    
+}
+.box2
+{
+   height: 200px;
+   position: absolute;
+   left: 20%;
+}
+.logo .drop_down2 li
+{
+    display: block;
+}
+.logo .drop_down2 li 
+{
+    margin: 20px;
+}
+
+.flex li:hover .drop_down2
+{
+    display: block;
+    
+}
+.contant .img img
+{
+    position: absolute;
+    left: 60%;
+    top: 15%;
+}
+
+.text 
+{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+
+}
+.text 
+{
+    font-size: 40px;
+}
+.paragraph
+{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: hsl(0, 0%, 41%);
+    line-height: 30px;
+    margin-top: 14%;
+}
+.learn-more button
+{
+    width: 140px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid black;
+    margin-top: 16%;
+    cursor: pointer;
+}
+.under-bar
+{
+    position: absolute;
+    top: 100%;
+}
+.under-bar img
+{
+    margin: 5px;
+}
+.close-btn 
+{
+    display: none;
+}
+
+/* 501 */
+@media only screen and (max-width: 501px)
+{
+    .img img
+    {
+       
+       width: 200px;
+       position: absolute;
+    }
+    .img 
+    {
+       position: absolute;
+       margin-right: 200px;
+    }
+    .under-bar img
+   {
+       position: relative;
+       margin: 10px;
+   }
+}
+
+@media only screen and (max-width: 1056px)
+{
+    .navbar .list
+    {
+        display: none;
+    }
+    .close-btn
+    {
+        display: block;
+    }
+    
+}
+@media only screen and (max-width: 630px)
+{
+    .btn 
+    {
+        display: none;
+    }
+}
+@media only screen and (max-width: 920px)
+{
+    .btn
+    {
+        display: none;
+    }
+}
+@media only screen and (max-width: 560px)
+{
+    .btn
+    {
+        display: none;
+        position: fixed
+    }
+    
+    
+}
+
+
+@media only screen and (max-width: 375px)
+{
+    .under-bar img
+    {
+        width: 80px;
+    }
+    .close-btn
+    {
+        display: block;
+    }
+}
+/* 385px */
+@media only screen and (max-width: 385px)
+{
+ .img img
+ {
+    
+    width: 200px;
+    position: absolute;
+ }
+ .img 
+ {
+    position: absolute;
+    margin-right: 200px;
+ }
+ .under-bar img
+{
+    position: relative;
+    margin: 30px;
+    display: block;
+}
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+  
+  .menu {
+    flex-grow: 1;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  ul li:hover {
+    color: #007bff;
+  }
+  
+  .auth button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .auth button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .open-btn, .close-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    /* font-size: 24px; */
+    cursor: pointer;
+    z-index: 1000;
+    width: 60px;
+  }
+
+  
+  .open-btn {
+    display: none;
+  }
+  /* 487 */
+  @media only screen and (max-width: 485px)
+  {
+    .under-bar 
+    {
+        margin:5px;
+        position: relative;
+    }
+  }
